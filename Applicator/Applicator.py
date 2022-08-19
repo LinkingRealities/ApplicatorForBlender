@@ -320,7 +320,7 @@ class ApplicatorCreateFaceRig(bpy.types.Operator):
                 return collection
             
         #didn't find it, return None    
-        return None
+        return bpy.data.collections.new('Collection')
     
     ################################################################    
     # Gets the object form the collection
